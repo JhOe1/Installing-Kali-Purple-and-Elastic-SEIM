@@ -20,7 +20,10 @@
 
 ---
 In this experiment i will be creating a phishing simulation using Gophisp
-First i had to make a new directory name Gophish and used the wget command to download Gophish from their github repo.
+First i had to create VPC instance, I will be using Linode then i had to created an ubuntu 22.04 machine with 1GB RAM 1 CPU and 25GB ROM 
+Then i SSH into the machine, Next i updated all the packages using "sudo apt-get update && apt-get upgrade -y "
+Then i installed unzip "sudo apt-get install unzip"
+Then i had to make a new directory name Gophish and used the wget command to download Gophish from their github repo.
 Next i used the unzip tool to extract Gophisp
 Then i modified the config.json file and edited the listen_url to "0.0.0.0"
 Next i used "chmod +x gophisp" to make the gophish and executable 
