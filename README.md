@@ -12,6 +12,7 @@ Kali purple machine will have 8GB of RAM, 4 CPU and 80GB ROM
 
 <img width="1007" alt="Screenshot 2024-11-01 at 03 14 14" src="https://github.com/user-attachments/assets/5442e0d8-1143-49ad-8096-7d0408bd15b5">
 
+<img width="900" alt="Screenshot 2024-11-01 at 03 31 52" src="https://github.com/user-attachments/assets/f5cbe6f4-8a7d-4b54-b8c5-48f4cba9c431">
 
 
 
