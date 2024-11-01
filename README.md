@@ -1,4 +1,4 @@
-# Phishing Simulation Attack with GoPhish
+# Installing Kali Purple and Elastic SEIM
 
 ---
 
