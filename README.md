@@ -1,6 +1,21 @@
 # Installing Kali Purple and Elastic SEIM
 
 ---
+In this project, I will be installing Kali purple on a virtual machine which will serve as blue, Then will also have another Kali machine which will serve as the Red team and lastly a Windows machine that will serve as the victim. For the experiment, i will be using Virtual box as my hypervisor 
+
+I will be conducting a series of attacks on the Windows machine using Kali for attacks the monitoring these attacks using Kali Purple where the Elastic SEIM will be installed.
+
+First, i have to install Kali Purple i already downloaded the ISO from Kali website 
+
+
+Kali purple machine will have 8GB of RAM, 4 CPU and 80GB ROM
+
+<img width="1007" alt="Screenshot 2024-11-01 at 03 14 14" src="https://github.com/user-attachments/assets/5442e0d8-1143-49ad-8096-7d0408bd15b5">
+
+
+
+
+
 
 ## Project Overview
 - **Objective**: This project demonstrates a controlled phishing simulation attack using GoPhish. It aims to educate users about phishing risks, help them recognize phishing emails, and analyze user responses.
