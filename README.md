@@ -21,25 +21,48 @@ Next, I installed all the dependencies using the following lines of codes to get
 # Elastic stack installation
 
 # 1. Install dependencies:
-# ------------------------
 
-sudo apt-get install curl
+
+<img width="1002" alt="Screenshot 2024-11-14 at 17 05 03" src="https://github.com/user-attachments/assets/165bf6ff-e6aa-4e97-aff4-0486051eca95">
+
+I used the following commands to install dependencies needed to get Elastic Search up and running 
+
+"sudo apt-get install curl
 curl -fsSL https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/elastic-archive-keyring.gpg
 echo "deb https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-8.x.list
 sudo bash -c "export HOSTNAME=kali-purple.kali.purple; apt-get install elasticsearch -y"
 
 
 # 2. Convert to single-node setup :
-# -----------------------------------------------------------------------------------------------------
+
+<img width="997" alt="Screenshot 2024-11-14 at 17 08 20" src="https://github.com/user-attachments/assets/41e32da1-e86a-4ca8-b429-1f6a6baca406">
+Next I used the following commands to  Convert to a single-node setup 
+
 sudo sed -e '/cluster.initial_master_nodes/ s/^#*/#/' -i /etc/elasticsearch/elasticsearch.yml
 echo "discovery.type: single-node" | sudo tee -a /etc/elasticsearch/elasticsearch.yml
 
 
 # 3. Install Kibana:
-# ------------------
-sudo apt install kibana
-sudo /usr/share/kibana/bin/kibana-encryption-keys generate -q
+
+<img width="997" alt="Screenshot 2024-11-14 at 17 13 14" src="https://github.com/user-attachments/assets/bd39179c-bd8c-4c80-a9b7-688b65f3d97f">
+Next i install Kibana with the following command 
+"sudo apt install kibana
+sudo /usr/share/kibana/bin/kibana-encryption-keys generate -q"
 # Add keys to /etc/kibana/kibana.yml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 echo "server.host: \"kali-purple.kali.purple\"" | sudo tee -a /etc/kibana/kibana.yml
 # Ensure kli-purple.kali.purple is only mapped to my IP Address in /etc/hosts in order to bind Kibana to that interface
 sudo systemctl enable elasticsearch kibana --now
