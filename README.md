@@ -73,3 +73,6 @@ echo "server.host: \"kali-purple.kali.purple\"" | sudo tee -a /etc/kibana/kibana
  Ensure kli-purple.kali.purple is only mapped to my IP Address in /etc/hosts in order to bind Kibana to that interface
 sudo systemctl enable elasticsearch kibana --now
 
+
+# 4. Welcome to elastic:
+<img width="1360" alt="Screenshot 2024-11-14 at 17 50 28" src="https://github.com/user-attachments/assets/eeb5395f-4f4a-4a8d-bf8a-f581a01626a1">
