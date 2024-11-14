@@ -47,12 +47,12 @@ echo "discovery.type: single-node" | sudo tee -a /etc/elasticsearch/elasticsearc
 <img width="997" alt="Screenshot 2024-11-14 at 17 13 14" src="https://github.com/user-attachments/assets/bd39179c-bd8c-4c80-a9b7-688b65f3d97f">
 Next, I install Kibana with the following command 
 ["[sudo apt install kibana
-sudo /usr/share/kibana/bin/kibana-encryption-keys generate -q"]
+!sudo /usr/share/kibana/bin/kibana-encryption-keys generate -q"]
 
- Next I Added keys to /etc/kibana/kibana.yml
+ !Next I Added keys to /etc/kibana/kibana.yml
 [echo "server.host: \"kali-purple.kali.purple\"" | sudo tee -a /etc/kibana/kibana.yml]
 
-I ensured kali-purple.kali.purple is only mapped to host IP address in /etc/hosts in order to bind Kibana to that interface.
+!I ensured kali-purple.kali.purple is only mapped to host IP address in /etc/hosts in order to bind Kibana to that interface.
 
 
 
